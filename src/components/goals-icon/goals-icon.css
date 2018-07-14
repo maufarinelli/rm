@@ -1,11 +1,3 @@
-.goals-image {
-    width: 100%;
-}
-
-.goals-image img {
-    max-width: 100%;
-}
-
 .goals-progress path {
     fill: #000;
 }

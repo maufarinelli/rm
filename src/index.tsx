@@ -4,7 +4,7 @@ import App from './containers/app/App';
 import './index.css';
 import registerServiceWorker from './registerServiceWorker';
 
-// require('dotenv').config(); // tslint:disable-line
+require('dotenv').config({path: '../.env'}); // tslint:disable-line
 
 ReactDOM.render(
   <App />,

@@ -4,8 +4,8 @@ import './App.css';
 import Balance from '../balance/Balance';
 import Goals from '../goals/Goals';
 
-const PrimaryLayout = () => (
-    <div className="primary-layout">
+const Layout = () => (
+    <div className="layout">
         <header>
             <h1>Rooster Money</h1>
             <nav>
@@ -25,7 +25,7 @@ const PrimaryLayout = () => (
 
 const App = () => (
     <BrowserRouter>
-        <PrimaryLayout />
+        <Layout />
     </BrowserRouter>
 );
 

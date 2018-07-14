@@ -26,8 +26,8 @@ class Balance extends React.Component<object, IBalanceState> {
     };
 
     public async componentDidMount() {
-        const token = await authenticate();
-        const balance = await getBalance(token);
+        const token: string = await authenticate();
+        const balance: IBalance[] = await getBalance(token);
         this.setState({balance: balance[0]});
     }
 
