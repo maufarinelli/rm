@@ -1,0 +1,32 @@
+.goals-image {
+    width: 100%;
+}
+
+.goals-image img {
+    max-width: 100%;
+}
+
+.goals-progress path {
+    fill: #000;
+}
+
+.goals-progress #top {
+    fill: #11CD6E;
+}
+
+.goals-progress .progress {
+    fill: #11CD6E;
+}
+
+.goals-value,
+.goals-total{
+    fill: #11CD6E;
+}
+
+.goals-value {
+    font-size: 75px;
+}
+
+.goals-total{
+    font-size: 90px;
+}

@@ -3,7 +3,8 @@
   "rules": {
     "indent": [true, "spaces", 2],
     "no-console": [false, "log", "error"],
-    "ordered-imports": false
+    "ordered-imports": false,
+    "jsx-boolean-value": false
   },
   "linterOptions": {
     "exclude": [
