@@ -1,0 +1,12 @@
+.charity-icon path,
+.charity-icon text {
+    fill: #FFACAC;
+}
+
+.charity-title {
+    color: #FFACAC;
+}
+
+.charity-value {
+    font-size: 130px;
+}

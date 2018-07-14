@@ -1,0 +1,12 @@
+.wallet-icon path,
+.wallet-icon text {
+    fill: #F4C600;
+}
+
+.wallet-title {
+    color: #F4C600;
+}
+
+.wallet-value {
+    font-size: 130px;
+}

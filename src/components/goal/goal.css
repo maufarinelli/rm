@@ -1,0 +1,12 @@
+.goal-icon path,
+.goal-icon text {
+    fill: #EB4F38;
+}
+
+.goal-title {
+    color: #EB4F38;
+}
+
+.goal-value {
+    font-size: 130px;
+}

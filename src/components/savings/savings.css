@@ -1,0 +1,12 @@
+.savings-icon path,
+.savings-icon text {
+    fill: #11CD6E;
+}
+
+.savings-title {
+    color: #11CD6E;
+}
+
+.savings-value {
+    font-size: 130px;
+}

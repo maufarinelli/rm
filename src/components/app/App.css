@@ -1,0 +1,38 @@
+html { font-size: 62.5%; }
+
+body {
+  font-family: 'Handlee', cursive;
+  font-size: 1.6rem;
+  background-color: #ffffc6;
+  color: #484848;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+.container {
+  padding: 20px;
+  font-family: 'Handlee', cursive;
+}
+
+.dashboard {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 30% 30%;
+}
+
+.dashboard-item {
+  position: relative;
+  align-self: center;
+  justify-self: center;
+  font-weight: bold;
+  width: 80%;
+  text-align: center;
+}
+
+.dashboard-item h2 {
+  font-size: 2rem;
+  margin: 0;
+}
