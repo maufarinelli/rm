@@ -16,23 +16,31 @@ interface IGoal {
 
 interface IGoalsState {
     goals?: IGoal;
+    goalsProgressPath: number
 }
 
 class Goals extends React.Component<object, IGoalsState> {
     public state: IGoalsState = {
-        goals: undefined
+        goals: undefined,
+        goalsProgressPath: 0
     };
 
     public async componentDidMount() {
+        const goalsProgressTotalPath: number = 18;
         const token: string = await authenticate();
         const goals: IGoal = await getGoals(token);
-        this.setState({goals});
+        this.setState({
+            goals
+        });
+
+        setTimeout(() => {
+            this.setState({goalsProgressPath: goals ? (goals.goalProgress * goalsProgressTotalPath) / goals.goalTotal : 0});
+        }, 300);
     }
 
     public render() {
-        const { goals } = this.state;
-        const goalsProgressTotalPath: number = 18;
-        const goalsProgressPath: number = goals ? (goals.goalProgress * goalsProgressTotalPath) / goals.goalTotal : 0;
+        const { goals, goalsProgressPath } = this.state;
+
         return (
             <div className="container">
                 { goals && <GoalsDetail title={goals.goalDescription} image={goals.goalImages}/>}

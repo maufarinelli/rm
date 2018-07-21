@@ -1,4 +1,14 @@
+.goals-head {
+    display: flex;
+}
+
+.goals-title {
+    flex: 2;
+    margin-left: 10px;
+}
+
 .goals-image {
+    flex: 1;
     width: 100%;
 }
 
